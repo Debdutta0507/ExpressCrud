@@ -1,0 +1,47 @@
+doctype 
+
+html 
+
+  head 
+    link(rel='stylesheet', href='/stylesheets/issue.css')
+
+    title Edit existing comment 
+body
+  div#center
+
+    h3#heading Issue Details 
+
+    form(id='form', method='post',action=`/comments/edit/${comment.id}`) 
+
+      label(for='description') Description 
+
+      input(type='text', id='description', name='description' value=`${comment.description}`) 
+
+      <br/><br/> 
+      label(for='severity') Severity
+     
+      select(name='severity' placeholder="severity" id="severity" value=`${comment.severe}`) 
+       option(value='severe') Major
+       option(value='mod') Minor
+       option(value='low') Critical
+       
+      <br/><br/> 
+      label(for='status') Status
+     
+      select(name='status' placeholder="status" id="status" value=`${comment.status}`) 
+       option(value='open') Open
+       option(value='close') Close
+       option(value='progess') In Progress
+
+      <br/><br/> 
+       
+       
+      label(for='cdate') Create date
+      input(type='date', id='cdate', name='cdate' value=`${comment.odate}`) 
+      <br/><br/> 
+      
+      label(for='cldate') Close date
+     
+      input(type='date', id='cldate', name='cldate' value=`${comment.cdate}`) 
+      <br/><br/> 
+      input#button(type='submit', value='Add Comment') 

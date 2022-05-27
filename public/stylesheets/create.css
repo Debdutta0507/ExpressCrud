@@ -1,0 +1,49 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: rgb(34, 47, 47);
+}
+
+#container {
+    margin: 20px;
+    padding-left: 10rem;
+    border-color: brown;
+}
+
+#heading {
+    color: aqua;
+    margin-left: 23rem;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    width: 50rem;
+    height: 5rem;
+
+    background-color: powderblue;
+    margin-bottom: 2rem;
+}
+
+td {
+    padding-left: 1rem;
+    font-size: 14px;
+}
+
+a {
+    color: rgb(151, 11, 116);
+    background-color: rgb(250, 145, 8);
+    padding: 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+#menu {
+    color: aqua;
+    margin-left: 40rem;
+    margin-top: 10rem;
+    background-color: beige;
+}

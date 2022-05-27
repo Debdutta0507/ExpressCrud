@@ -1,0 +1,53 @@
+doctype 
+
+html 
+
+  head 
+    link(rel='stylesheet', href='/stylesheets/create.css') 
+
+    title=title 
+
+  body 
+    div#container
+
+
+      h3#heading Issues
+      table 
+
+        tr 
+
+          th Description
+
+          th Severity
+          th Status
+          th Create date 
+          th Close date
+
+          th Edit 
+
+          th Delete 
+
+        each item in comments 
+
+          tr 
+
+            td #{item.description} 
+
+            td #{item.severity} 
+            td #{item.status}
+            td #{item.odate}
+            td #{item.cdate}
+
+            td 
+
+              a(href=`/comments/edit/${item.id}`) Edit 
+
+            td 
+
+              a(href=`/comments/delete/${item.id}`) Delete 
+
+      p 
+
+    
+
+        a#menu(href='/comments/create') Add new comment 

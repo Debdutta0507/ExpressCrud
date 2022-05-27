@@ -1,0 +1,52 @@
+doctype 
+
+html 
+
+  head
+    link(rel='stylesheet', href='/stylesheets/issue.css')
+    
+
+    title Add Issues
+    
+
+  body
+    div#center  
+    
+    
+
+      h2#heading Issue Details
+
+      form(id='form', method='post', action='/comments/create') 
+
+        label(for='description') Description 
+
+        input(type='text', id='description', name='description') 
+
+        <br/><br/> 
+        label(for='severity') Severity
+      
+        select(name='severity' placeholder="severity" id="severity") 
+          option(value='severe') Major
+          option(value='mod') Minor
+          option(value='low') Critical
+        
+        <br/><br/> 
+        label(for='status') Status
+      
+        select(name='status' placeholder="status" id="status") 
+          option(value='open') Open
+          option(value='close') Close
+          option(value='progess') In Progress
+
+        <br/><br/> 
+        
+        
+        label(for='cdate') Create date
+        input(type='date', id='cdate', name='cdate') 
+        <br/><br/> 
+        
+        label(for='cldate') Close date
+      
+        input(type='date', id='cldate', name='cldate') 
+        <br/><br/> 
+        input#button(type='submit', value='Add Comment') 

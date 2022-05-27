@@ -1,0 +1,41 @@
+#center {
+    margin: 25rem;
+    border: 2px solid;
+    padding: 3rem;
+    margin-top: 6rem;
+    width: 20rem;
+    background-color: rgb(163, 246, 246);
+
+}
+
+#heading {
+    font-size: 30px;
+}
+
+body {
+
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: aqua;
+    font-weight: bold;
+}
+
+label {
+    width: 80px;
+    padding-right: 1rem;
+    display: inline-block;
+}
+
+#button {
+    background-color: aquamarine;
+    border-color: beige;
+    border-radius: 6px;
+    margin-left: 13rem;
+    margin-top: 3rem;
+
+}
+
+input,
+select {
+    background-color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
